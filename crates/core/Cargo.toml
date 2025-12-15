@@ -1,0 +1,13 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "wpaper"
+path = "src/main.rs"
+
+[dependencies]
+windows = { workspace = true }
+window = { path = "../window" }
+display = { path = "../display" }

@@ -1,9 +1,9 @@
-[package]
-name = "rust-wpaper"
-version = "0.1.0"
-edition = "2024"
+[workspace]
+members = ["crates/core", "crates/display", "crates/window", "crates/shared"]
 
-[dependencies]
+resolver = "2"
+
+[workspace.dependencies]
 windows = { version = "0.58", features = [
     "Win32_Foundation",
     "Win32_System_Com",

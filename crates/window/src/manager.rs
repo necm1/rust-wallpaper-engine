@@ -5,10 +5,9 @@ use windows::Win32::UI::WindowsAndMessaging::{
     TranslateMessage,
 };
 
-use crate::{
-    display::DisplayManager,
-    window::{Desktop, Window},
-};
+use crate::Desktop;
+use crate::window::Window;
+use display::DisplayManager;
 
 pub struct WindowManager {
     desktop: Desktop,

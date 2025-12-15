@@ -1,3 +1,4 @@
+use shared::enum_windows_proc;
 use windows::{
     Win32::{
         Foundation::{HWND, LPARAM, WPARAM},
@@ -5,8 +6,6 @@ use windows::{
     },
     core::w,
 };
-
-use crate::window::enum_windows_proc;
 
 pub struct Desktop {
     progman: HWND,
