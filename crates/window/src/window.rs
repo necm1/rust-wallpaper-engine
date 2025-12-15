@@ -1,3 +1,4 @@
+use shared::window_proc;
 use windows::{
     Win32::{
         Foundation::{COLORREF, HWND},
@@ -15,9 +16,6 @@ use windows::{
     },
     core::w,
 };
-
-use crate::window::window_proc;
-
 pub struct Window {
     pub hwnd: HWND,
 }

@@ -1,12 +1,13 @@
 use std::collections::HashMap;
 
+use shared::monitor_enum_proc;
 use windows::Win32::{
     Foundation::LPARAM,
     Graphics::Gdi::{EnumDisplayMonitors, MONITORINFO},
     UI::WindowsAndMessaging::{GetSystemMetrics, SM_CMONITORS},
 };
 
-use crate::{display::DisplayInfo, window::monitor_enum_proc};
+use crate::DisplayInfo;
 
 pub struct DisplayManager {
     monitors: HashMap<i32, DisplayInfo>,
